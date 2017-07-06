@@ -1,0 +1,7 @@
+<p>Here's the list of all the trips!</p>
+
+<ul>
+<% @trips.each do |trip| %>
+  <li><%=  trip.title %></li>
+<% end %>
+</ul>
