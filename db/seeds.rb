@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.create!({
+  email: 'lydiamnash@gmail.com',
+  password: 'DogsRCool123!'
+})
+
+User.first.trips.create!({
+  title: 'Lake Aloha Adventure', 
+  description: 'One of the best backpacking trips ever!',
+  starting_point: 5,
+  ending_point: 10'
+})
